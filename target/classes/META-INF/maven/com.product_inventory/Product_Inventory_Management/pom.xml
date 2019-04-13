@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.product_inventory</groupId>
+	<artifactId>Product_Inventory_Management</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Product_Inventory_Management</name>
+	<description>Product Inventory Management Application for its users to manage the inventory products. There are two types of users : Supervisors and Inventory Managers responsible for supervising and managing the inventory.</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>		
+		<dependency>
+		    <groupId>it.ozimov</groupId>
+		    <artifactId>spring-boot-email-core</artifactId>
+		    <version>0.6.3</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-core</artifactId>
+		    <version>1.19.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-client</artifactId>
+		    <version>1.19.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20090211</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
+		<dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-server</artifactId>
+		    <version>1.19.4</version>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
